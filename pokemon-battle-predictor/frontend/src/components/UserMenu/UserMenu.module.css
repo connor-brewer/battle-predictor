@@ -1,0 +1,86 @@
+.root {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 50;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #d066ff;
+  color: #11111a;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: 2px solid #2c2c3a;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.1s, box-shadow 0.15s;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(208, 102, 255, 0.4);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 200px;
+  background: #1a1a24;
+  border: 1px solid #2c2c3a;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.userBlock {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #2c2c3a;
+  background: #11111a;
+}
+
+.username {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.points {
+  color: #d066ff;
+  font-size: 0.8rem;
+  margin-top: 0.15rem;
+}
+
+.item {
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  padding: 0.65rem 1rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.item:hover {
+  background: #2c2c3a;
+}
+
+.logoutItem {
+  color: #ff8888;
+  border-top: 1px solid #2c2c3a;
+}
+
+.logoutItem:hover {
+  background: rgba(255, 107, 107, 0.12);
+}

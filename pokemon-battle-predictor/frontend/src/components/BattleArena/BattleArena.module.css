@@ -1,0 +1,79 @@
+.arena {
+  background: #000;
+  border-radius: 12px;
+  padding: 1.5rem 1rem 1rem;
+  width: min(900px, 95vw);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  border: 2px solid #1c1c28;
+}
+
+.matchup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.loading {
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 2rem;
+}
+
+.error {
+  color: #ff6b6b;
+  text-align: center;
+  padding: 2rem;
+  max-width: 500px;
+}
+
+.hint {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.result {
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.resultHeader {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.delta {
+  color: #6ce06c;
+  margin-left: 0.5rem;
+}
+
+.deltaNeg {
+  color: #ff6b6b;
+  margin-left: 0.5rem;
+}
+
+.nextButton {
+  background: #d066ff;
+  color: #11111a;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.nextButton:hover {
+  background: #e088ff;
+}

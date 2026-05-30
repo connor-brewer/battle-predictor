@@ -1,0 +1,236 @@
+.page {
+  width: min(1000px, 95vw);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.backButton {
+  background: #1a1a24;
+  border: 1px solid #2c2c3a;
+  color: #fff;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background: #2c2c3a;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.75rem;
+  flex: 1;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  align-items: center;
+}
+
+.clearButton {
+  background: transparent;
+  border: 1px solid rgba(255, 107, 107, 0.45);
+  color: #ff8888;
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.clearButton:hover:not(:disabled) {
+  background: rgba(255, 107, 107, 0.12);
+}
+
+.clearButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-radius: 8px;
+  padding: 0.5rem 0.85rem;
+  min-width: 70px;
+}
+
+.statLabel {
+  color: #aaa;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.statValue {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
+}
+
+.loading,
+.empty,
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-radius: 8px;
+}
+
+.error {
+  color: #ff8888;
+  border-color: rgba(255, 107, 107, 0.35);
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-left-width: 4px;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.cardWin {
+  border-left-color: #6ce06c;
+}
+
+.cardLoss {
+  border-left-color: #ff6b6b;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.battleLabel {
+  color: #aaa;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badgeWin,
+.badgeLoss {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badgeWin {
+  background: rgba(108, 224, 108, 0.15);
+  color: #6ce06c;
+  border: 1px solid rgba(108, 224, 108, 0.4);
+}
+
+.badgeLoss {
+  background: rgba(255, 107, 107, 0.12);
+  color: #ff8888;
+  border: 1px solid rgba(255, 107, 107, 0.35);
+}
+
+.matchup {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.sprite {
+  width: 72px;
+  height: 72px;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.pokemonName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.vs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.vsLabel {
+  color: #d066ff;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.oddsLabel {
+  color: #aaa;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-top: 1px solid #2c2c3a;
+  padding-top: 0.65rem;
+}
+
+.footerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.footerLabel {
+  color: #aaa;
+}
+
+.footerValue {
+  color: #fff;
+  font-weight: 600;
+}

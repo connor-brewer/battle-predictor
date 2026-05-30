@@ -1,0 +1,24 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.moveButton {
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  cursor: default;
+  opacity: 1;
+  /* Override default disabled style — these are informational, not broken. */
+}
+
+.moveButton:disabled {
+  opacity: 0.95;
+}

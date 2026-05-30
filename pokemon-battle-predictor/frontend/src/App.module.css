@@ -1,0 +1,37 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 2rem 1rem 3rem;
+  background: radial-gradient(ellipse at top, #2a2a3a, #0c0c14 60%);
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 2.25rem;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  opacity: 0.7;
+  font-size: 1rem;
+}
+
+.bootLoader {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 1.1rem;
+  background: #0c0c14;
+}

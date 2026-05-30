@@ -1,0 +1,292 @@
+.page {
+  width: min(1000px, 95vw);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.backButton {
+  background: #1a1a24;
+  border: 1px solid #2c2c3a;
+  color: #fff;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background: #2c2c3a;
+}
+
+.title {
+  margin: 0;
+  flex: 1;
+  font-size: 1.75rem;
+}
+
+.poolBadge {
+  background: #1a1a24;
+  border: 1px solid #2c2c3a;
+  color: #aaa;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.poolBadge strong {
+  color: #d066ff;
+  margin-left: 0.25rem;
+}
+
+.distributeButton {
+  background: #d066ff;
+  color: #11111a;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.distributeButton:hover:not(:disabled) {
+  background: #e088ff;
+}
+
+.distributeButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.subtitle {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.error,
+.loading,
+.empty {
+  text-align: center;
+  padding: 1rem;
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-radius: 8px;
+  color: #aaa;
+}
+
+.error {
+  color: #ff8888;
+  border-color: rgba(255, 107, 107, 0.35);
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.distResult {
+  background: rgba(108, 224, 108, 0.08);
+  border: 1px solid rgba(108, 224, 108, 0.35);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.distHeader {
+  font-weight: 700;
+  color: #6ce06c;
+  font-size: 1rem;
+}
+
+.distGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.distGrid strong {
+  color: #fff;
+}
+
+.recipients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.recipient {
+  background: #1a1a24;
+  border: 1px solid #2c2c3a;
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.78rem;
+}
+
+.formSection {
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input,
+.editInput {
+  background: #1a1a24;
+  border: 1px solid #2c2c3a;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.input {
+  flex: 1;
+}
+
+.input:focus,
+.editInput:focus {
+  border-color: #d066ff;
+}
+
+.editInput {
+  width: 90px;
+}
+
+.submitButton {
+  background: #d066ff;
+  color: #11111a;
+  border: none;
+  padding: 0.55rem 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #e088ff;
+}
+
+.submitButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.formHint {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: #888;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead th {
+  text-align: left;
+  color: #aaa;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #2c2c3a;
+}
+
+.table tbody td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid #1f1f2c;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dateCell {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+
+.actionButton {
+  background: #1a1a24;
+  border: 1px solid #2c2c3a;
+  color: #fff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.actionButton:hover:not(:disabled) {
+  background: #2c2c3a;
+}
+
+.actionButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.deleteButton {
+  color: #ff8888;
+  border-color: rgba(255, 107, 107, 0.35);
+}
+
+.deleteButton:hover:not(:disabled) {
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.lockedRow td {
+  opacity: 0.55;
+}
+
+.distributedBadge,
+.pendingBadge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.distributedBadge {
+  background: rgba(108, 224, 108, 0.15);
+  color: #6ce06c;
+  border: 1px solid rgba(108, 224, 108, 0.4);
+}
+
+.pendingBadge {
+  background: rgba(208, 102, 255, 0.15);
+  color: #e088ff;
+  border: 1px solid rgba(208, 102, 255, 0.4);
+}

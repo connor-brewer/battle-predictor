@@ -1,0 +1,41 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #fff;
+}
+
+.label {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.checkbox {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.15s;
+}
+
+.checkbox:hover {
+  background: #ddd;
+}
+
+.checked {
+  background: #fff;
+}
+
+.mark {
+  color: #2bb24c;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1;
+}

@@ -1,0 +1,174 @@
+.page {
+  width: min(1000px, 95vw);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.backButton {
+  background: #1a1a24;
+  border: 1px solid #2c2c3a;
+  color: #fff;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background: #2c2c3a;
+}
+
+.title {
+  margin: 0;
+  flex: 1;
+  font-size: 1.75rem;
+}
+
+.refreshButton {
+  background: #1a1a24;
+  border: 1px solid #2c2c3a;
+  color: #fff;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.refreshButton:hover:not(:disabled) {
+  background: #2c2c3a;
+}
+
+.refreshButton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.subtitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.error,
+.loading,
+.empty {
+  text-align: center;
+  padding: 1.25rem;
+  color: #aaa;
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-radius: 8px;
+}
+
+.error {
+  color: #ff8888;
+  border-color: rgba(255, 107, 107, 0.35);
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.streakRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.streakCard {
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-left-width: 4px;
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.streakCard.win {
+  border-left-color: #6ce06c;
+}
+
+.streakCard.lose {
+  border-left-color: #ff6b6b;
+}
+
+.streakLabel {
+  color: #aaa;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.streakValue {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.streakUser {
+  font-size: 1rem;
+  color: #d066ff;
+}
+
+.streakEmpty {
+  color: #888;
+  font-style: italic;
+  margin-top: 0.4rem;
+}
+
+.rankSection {
+  background: #11111a;
+  border: 1px solid #2c2c3a;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table thead th {
+  text-align: left;
+  color: #aaa;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #2c2c3a;
+}
+
+.table tbody td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #1f1f2c;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.rankCell {
+  color: #d066ff;
+  font-weight: 700;
+  width: 50px;
+}
+
+.titleBadge {
+  background: rgba(208, 102, 255, 0.15);
+  color: #e088ff;
+  border: 1px solid rgba(208, 102, 255, 0.4);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
